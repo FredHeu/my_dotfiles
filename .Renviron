@@ -1,0 +1,4 @@
+R_HOME_USER = ~/R/x86_64-pc-linux-gnu-library/4.6
+R_PROFILE_USER = ~/.Rprofile
+R_LIBS_USER = ~/R/x86_64-pc-linux-gnu-library/4.6/Library
+
