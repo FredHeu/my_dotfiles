@@ -3,35 +3,35 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px}
+    font-size: 13px}
 
 window#waybar {
-  background: transparent;
+  background: @surface0;
   color: @text;
-  margin: 5px 5px;
+  margin: 0;
 }
 
 #workspaces {
-  border-radius: 1rem;
-  margin: 5px;
-  background-color: @surface0;
-  margin-left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0px 5px 0px 5px;
+  background-color: @surface1;
+  margin-left: 10px;
 }
 
 #workspaces button {
   color: @lavender;
-  border-radius: 1rem;
-  padding: 0.4rem;
+  border-radius: 0.5rem;
+  padding: 0;
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #custom-music,
@@ -42,19 +42,20 @@ window#waybar {
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+  background-color: @surface1;
 }
 
 #clock {
   color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  padding: 0px 5px 0px 5px;
+  margin-right: 10px;
 }
 
 #battery {
   color: @green;
+  margin: 0px 3px 0px 0px;
+  padding: 0px 12px 0px 8px;
 }
 
 #battery.charging {
@@ -67,35 +68,39 @@ window#waybar {
 
 #backlight {
   color: @yellow;
+  margin: 0px 3px 0px 3px;
+  padding: 0px 10px 0px 10px;
 }
 
-#backlight, #battery {
-    border-radius: 0;
-}
 
 #pulseaudio {
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
+  border-radius: 0.5rem 0px 0px 0.5rem;
+  padding: 0px 5px 0px 8px;
 }
 
 #custom-music {
   color: @mauve;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  padding: 0px 5px 0px 5px;
 }
 
 #custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
-    color: @lavender;
+  border-radius: 0.5rem 0px 0px 0.5rem;
+  padding: 0px 8px 0px 8px;
+  color: @lavender;
+  margin-right: 3px;
 }
 
 #custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: @red;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  padding: 0px 8px 0px 8px;
+  color: @red;
+  margin-right: 10px;
 }
 
 #tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
+  margin-right: 0.5rem;
+  padding: 0px 5px 0px 5px;
+  border-radius: 0.5rem;
 }
